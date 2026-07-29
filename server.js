@@ -5,7 +5,7 @@ const estoqueRoutes = require('./src/routes/estoqueRoutes');
 
 app.use(express.json());
 app.use('/api/usuarios', userRoutes); // NOVA LINHA
+app.use('/api/estoque', estoqueRoutes);
 
 app.listen(3000, () => console.log('API rodando na porta 3000'));
 
-app.use('/api/estoque', estoqueRoutes);
